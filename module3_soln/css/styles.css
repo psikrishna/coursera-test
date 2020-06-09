@@ -1,141 +1,117 @@
-/* Base Styles */
-
 * {
-	box-sizing: border-box;
-}
-
-h1 {
-	font-family: Brushstroke, fantasy;
-	color: #000000;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-	background-image: url("background.jpg");
-	background-color: #FEF5CA;
-
+    font-size: 16px;
+    background-color: #1a1a1d;
+}
+  
+h1 { 
+    color: #c3073f;
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: .75;
 }
 
-p {
-	padding: 10px;
-	margin: 0;
+h2 { 
+    color:#950740;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 20px;
+    line-height: .75;
 }
-
-.container {
-	border: none;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 10px;
+  
+h3 { 
+    font-weight: bold;
 }
-
-section {
-	border:	1px solid black;
-	background-color: #00FF99;
-	width: 100%;
-	height: auto;
-	font-family: Helvetica;
-	color: black;
-	position: relative;
-	overflow: auto;
-}
-
-#chicken {
-	border: 1px solid black;
-	text-align: center;
-	width: 30%;
-	margin-left: 70%;
-	font-family: Georgia,sans-serif;
-	font-weight: bold;
-	font-size: 125%;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 5px;
-	background-color: #FFFF00;
-}
-
-#beef {
-	border: 1px solid black;
-	text-align: center;
-	width: 30%;
-	margin-left: 70%;
-	font-family: Georgia,sans-serif;
-	font-weight: bold;
-	font-size: 125%;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 5px;
-	background-color: #FF1439;
-}
-
-#sushi {
-	border: 1px solid black;
-	text-align: center;
-	width: 30%;
-	margin-left: 70%;
-	font-family: Georgia,sans-serif;
-	font-weight: bold;
-	font-size: 125%;
-	margin-bottom: 0;
-	margin-top: 0;
-	background-color: #6495ED;
-	color: white;
-	padding: 5px;
-}
-
-#chicken-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#beef-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#sushi-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.navbar-brand {
-  font-size: 2em;
-  border: 0 0 10px 10px;
-  color: #FFFFFF;
-}
-
+  
 #header-nav {
-  border: 0;
-  background-color: #FC5F06;
-  color: #FFFFFF;
+    background-color: #6f2232;  
+}
+  
+/*drop down menu items*/
+#nav-list {
+    background-color: #950740; 
+}
+
+/*drop down menu*/
+#nav-list a {
+    color: #1a1a1d;
+    text-align: center;
+}
+
+#nav-list a:hover {
+    color: #c3073f;
+    text-decoration: none;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+    border: 1px solid #c3073f;
+    transform: rotate(90deg);
+    background-color: transparent;
+    margin: 2px;
 }
+
 .navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+    clear: both;
+    margin-top: -30px;
+    margin-bottom: 10px;
+ }
+
+/*main content*/  
+#main-content a {
+    text-decoration: none;
+}
+  
+.sectiontxt h3 {
+    padding: 5px 0px 15px 0px ;
+    margin: 10px 0px 0px 0px ;
+}
+  
+div.sectiontxt{
+    margin: 10px;
+    background: #950740;
+    color: #e6f9ff;
+    padding: 15px;
+}
+  
+.sectiontxt a {
+    color: #6f2232;
+}
+  
+.sectiontxt a:hover {
+    color: #c3073f;
 }
 
-.nav-header {
-  background-color: #FFFFFF;
+/*media queries*/
+/*for large devices*/
+@media (min-width: 1200px) {
+  .navbar-brand h1 {font-size: 2em;}
+  h2 { font-size: 1.8em; }
+  h3 { font-size: 1.5em; }
 }
-
-.nav-brand {
-  color: #FFFFFF;
-  font-size: 1.5em;
+  
+/*for medium devices*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .navbar-brand h1 {font-size: 1.8em;}
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.3em; }
 }
-
-#nav-list {
-  color: white;
+  
+/*for small devices*/
+@media (min-width: 768px) and (max-width: 991px) { 
+  .navbar-brand h1 {font-size: 1.5em;}
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
 }
-
-hr {
-  border-color: white;
-}
-
-.item {
-  color: white;
-  font-size: 1.2em;
+  
+/*for extra small devices*/
+@media (max-width: 767px) { 
+  .navbar-brand h1 {font-size: 1.5em;} 
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
 }
